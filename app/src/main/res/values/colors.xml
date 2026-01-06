@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+    <!-- PRIMARY THEME COLORS (Brand) -->
+    <color name="primaryColor">#fd6266</color>        <!-- Coral background -->
+    <color name="primaryDarkColor">#C94C4C</color>    <!-- Darker coral for appbar/bottomnav -->
+    <color name="accentColor">#6e0205</color>         <!-- Deep red buttons -->
+
+    <!-- TEXT COLORS -->
+    <color name="textPrimary">#111111</color>
+    <color name="textSecondary">#666666</color>
+
+    <!-- BACKGROUND COLORS -->
+    <color name="bgLight">#FFFFFF</color>             <!-- White -->
+    <color name="bgGreyLight">#F5F5F5</color>         <!-- Light gray -->
+
+    <!-- EXTRA -->
+    <color name="dividerColor">#DDDDDD</color>
+    <color name="errorColor">#E53935</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="star_yellow">#FFC107</color>
+
+</resources>
+
+

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="22dp"
+    app:cardElevation="6dp"
+    android:background="@android:color/white"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- PRODUCT IMAGE -->
+        <ImageView
+            android:id="@+id/ivProductImage"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:contentDescription="Product Image"/>
+
+        <!-- PRODUCT NAME -->
+        <TextView
+            android:id="@+id/tvProductTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Product Title "
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:maxLines="2"
+            android:minLines="2"
+            android:gravity="center"
+            android:ellipsize="end" />
+
+        <!-- PRICE -->
+        <TextView
+            android:id="@+id/tvProductPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Price: $200"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="15sp"/>
+
+        <!-- STAR RATING -->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/layoutRating"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginTop="4dp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="18dp"-->
+<!--                android:layout_height="18dp"-->
+<!--                android:src="@drawable/ic_"/>-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="18dp"-->
+<!--                android:layout_height="18dp"-->
+<!--                android:src="@drawable/ic_star_filled"/>-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="18dp"-->
+<!--                android:layout_height="18dp"-->
+<!--                android:src="@drawable/ic_star_filled"/>-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="18dp"-->
+<!--                android:layout_height="18dp"-->
+<!--                android:src="@drawable/ic_star_filled"/>-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="18dp"-->
+<!--                android:layout_height="18dp"-->
+<!--                android:src="@drawable/ic_star_half"/>-->
+
+<!--        </LinearLayout>-->
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:numStars="5"
+            android:rating="4.5"
+            android:stepSize="0.5"
+            android:isIndicator="true"
+            android:layout_gravity="center"
+            style="?android:attr/ratingBarStyleSmall"
+            android:progressTint="@color/star_yellow"
+            android:secondaryProgressTint="@color/star_yellow" />
+
+        <!-- ADD TO CART BUTTON -->
+        <Button
+            android:id="@+id/btnAddToCart"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:text="Add To Cart"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_cart"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
